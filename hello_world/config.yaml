@@ -30,7 +30,7 @@ schema:
   db:
     host: str
     user: str
-    password: password
+    password: str
     name: str
     waituntilready: int
 backup_exclude:
