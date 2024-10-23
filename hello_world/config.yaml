@@ -1,15 +1,39 @@
+#file: noinspection All
 name: "TeamSpeak3 Server Box"
 description: "My first TeamSpeak3 Server add-on!"
 version: "1.0.0"
 slug: "teamspeak3"
-init: true
-image: "ertagh/teamspeak3-server:latest-box"
 boot: auto
 startup: application
 arch:
   - aarch64
-#  - amd64
-#  - armhf
-#  - armv7
-#  - i386
-
+timeout: 30
+ports:
+  9987/udp: 9987
+  10011/tcp: 10011
+  30033/tcp: 30033
+ports_description:
+  "9987/udp": "Default voice server"
+  "10011/tcp": "Server Query"
+  "30033/tcp": "File Transfers"
+options:
+  time_zone: "Europe/Moscow"
+  db:
+    host: "mariadb"
+    database: "teamspeak3"
+    user: "teamspeak"
+    password: "teamspeak"
+    waituntilready: 30
+schema:
+  ts_update: "bool",
+  time_zone: "str",
+  db:
+    host: "str",
+    user: "str",
+    password: "password",
+    name: "str",
+    waituntilready: "int"
+backup_exclude:
+  - ".*/ts3server/logs/.*"
+services:
+  - "mariadb:need"
