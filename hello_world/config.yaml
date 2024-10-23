@@ -2,8 +2,6 @@ name: "TeamSpeak3 Server Box"
 description: "My first TeamSpeak3 Server add-on!"
 version: "1.0.0"
 slug: "teamspeak3"
-init: true
-image: "ertagh/teamspeak3-server:latest-box"
 boot: auto
 startup: application
 arch:
