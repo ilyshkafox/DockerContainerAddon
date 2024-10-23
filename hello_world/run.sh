@@ -1,3 +1,4 @@
+echo "Starting..."
 
 export TIME_ZONE=$TZ
 export TS3SERVER_DB_HOST="$(bashio::config 'db.host')"
