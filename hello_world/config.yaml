@@ -25,13 +25,13 @@ options:
     password: "teamspeak"
     waituntilready: 30
 schema:
-  ts_update: "bool",
-  time_zone: "str",
+  ts_update: "bool"
+  time_zone: "str"
   db:
-    host: "str",
-    user: "str",
-    password: "password",
-    name: "str",
+    host: "str"
+    user: "str"
+    password: "password"
+    name: "str"
     waituntilready: "int"
 backup_exclude:
   - ".*/ts3server/logs/.*"
