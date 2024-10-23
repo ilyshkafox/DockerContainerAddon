@@ -3,7 +3,7 @@ description: "My first TeamSpeak3 Server add-on!"
 version: "1.0.0"
 slug: "teamspeak3"
 init: false
-image: "hello-world"
+image: "library/hello-world"
 arch:
   - aarch64
   - amd64
