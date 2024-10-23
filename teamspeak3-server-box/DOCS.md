@@ -1,0 +1,1 @@
+# Home Assistant Add-on: TeamSpeak for everything
