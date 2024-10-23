@@ -1,7 +1,7 @@
 {
-  "name": "TeamSpeak3 Server Box",
+  "name": "TeamSpeak3 Server Box OLD",
   "version": "0.0.1",
-  "slug": "TeamSpeak3",
+  "slug": "teamspeak",
   "description": "TeamSpeak3 Server for Raspberry Pi 4",
   "url": "https://github.com/ilyshkafox/DockerContainerAddon/tree/master/teamspeak3-server-box",
   "startup": "services",
