@@ -28,9 +28,9 @@ schema:
   time_zone: str
   db:
     host: str
+    database: str
     user: str
     password: str
-    name: str
     waituntilready: int
 backup_exclude:
   - ".*/ts3server/logs/.*"
