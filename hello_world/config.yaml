@@ -2,7 +2,7 @@ name: "TeamSpeak3 Server Box"
 description: "My first TeamSpeak3 Server add-on!"
 version: "1.0.0"
 slug: "teamspeak3"
-init: false
+init: true
 image: "library/hello-world"
 boot: auto
 arch:
