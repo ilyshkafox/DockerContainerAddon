@@ -13,7 +13,7 @@ ENV TS3SERVER_DB_SQLCREATEPATH=create_mariadb
 ENV TS3SERVER_DB_WAITUNTILREADY=30
 ENV TS3SERVER_LICENSE=accept
 # Copy data for add-on
-COPY run.sh .
-RUN chmod a+x ./run.sh
+COPY run.sh /
+RUN chmod a+x /run.sh
 
-CMD [ "./run.sh" ]
+CMD [ "/run.sh" ]
