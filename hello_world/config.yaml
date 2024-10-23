@@ -25,7 +25,6 @@ options:
     password: teamspeak
     waituntilready: 30
 schema:
-  ts_update: bool
   time_zone: str
   db:
     host: str
