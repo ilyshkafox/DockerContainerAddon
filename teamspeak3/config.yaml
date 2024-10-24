@@ -29,7 +29,7 @@ options:
     password: teamspeak
     waituntilready: 30
 schema:
-  data_path: str,
+  data_path: str
   time_zone: str
   db:
     host: str
