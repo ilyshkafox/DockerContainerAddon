@@ -17,4 +17,4 @@ RUN chmod a+x /run.sh
 
 WORKDIR /teamspeak
 
-CMD [ "/run.sh" ]
+ENTRYPOINT [ "/run.sh" ]
