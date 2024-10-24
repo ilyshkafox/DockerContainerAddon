@@ -11,7 +11,7 @@ arch:
 timeout: 30
 map:
   - "config:rw"
-  - "share:rw",
+  - "share:rw"
 ports:
   9987/udp: 9987
   10011/tcp: 10011
