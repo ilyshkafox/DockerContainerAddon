@@ -11,6 +11,7 @@ arch:
 timeout: 30
 map:
   - "config:rw"
+  - "share:rw",
 ports:
   9987/udp: 9987
   10011/tcp: 10011
@@ -20,6 +21,7 @@ ports_description:
   "10011/tcp": "Server Query"
   "30033/tcp": "File Transfers"
 options:
+  data_path: "/config/teamspeak3",
   time_zone: "Europe/Moscow"
   db:
     host: mariadb
@@ -28,6 +30,7 @@ options:
     password: teamspeak
     waituntilready: 30
 schema:
+  data_path: str,
   time_zone: str
   db:
     host: str
