@@ -12,8 +12,6 @@ timeout: 30
 map:
   - type: addon_config
     read_only: False
-  - type: config
-    read_only: False
   - type: share
     read_only: False
 ports:
