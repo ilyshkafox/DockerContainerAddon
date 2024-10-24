@@ -27,6 +27,7 @@ export TS3SERVER_LICENSE
 
 
 mkdir -p "$DATA_PATH"
-ln -fP "$DATA_PATH" "/teamspeak/save"
+if [ -d "/teamspeak/save" ]; then rm -Rf "/teamspeak/save"; fi
+ln -fs "$DATA_PATH" "/teamspeak/save"
 
 /init
