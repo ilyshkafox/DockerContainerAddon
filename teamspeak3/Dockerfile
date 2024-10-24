@@ -15,4 +15,6 @@ ENV TS3SERVER_LICENSE=accept
 COPY run.sh /
 RUN chmod a+x /run.sh
 
+WORKDIR /teamspeak
+
 CMD [ "/run.sh" ]
