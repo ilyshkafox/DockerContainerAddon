@@ -15,6 +15,7 @@ TS3SERVER_DB_WAITUNTILREADY=30
 TS3SERVER_LICENSE=accept
 
 # Экспорт переменных окружения
+export DATA_PATH
 export TIME_ZONE
 export TS3SERVER_DB_HOST
 export TS3SERVER_DB_NAME
