@@ -10,7 +10,12 @@ arch:
   - aarch64
 timeout: 30
 map:
-  - "config:rw"
+  - type: addon_config
+    read_only: False
+  - type: config
+    read_only: False
+  - type: share
+    read_only: False
 ports:
   9987/udp: 9987
   10011/tcp: 10011
