@@ -10,8 +10,12 @@ arch:
   - aarch64
 timeout: 30
 map:
+  - type: homeassistant_config
+    read_only: False
+    path: /custom/homeassistant_config
   - type: addon_config
     read_only: False
+    path: /custom/addon_config
   - type: share
     read_only: False
 ports:
