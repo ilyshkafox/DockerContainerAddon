@@ -4,6 +4,7 @@ description: "My first TeamSpeak3 Server add-on!"
 version: "1.0.0"
 slug: "teamspeak3"
 boot: auto
+init: false
 startup: application
 arch:
   - aarch64
