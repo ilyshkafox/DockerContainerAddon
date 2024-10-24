@@ -23,10 +23,10 @@ options:
   data_path: "/config/teamspeak3"
   time_zone: "Europe/Moscow"
   db:
-    host: mariadb
+    host: core-mariadb
     database: teamspeak3
-    user: teamspeak
-    password: teamspeak
+    user: mariadb
+    password: mariadb
     waituntilready: 30
 schema:
   data_path: str
