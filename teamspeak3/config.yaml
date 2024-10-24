@@ -20,7 +20,7 @@ ports_description:
   "10011/tcp": "Server Query"
   "30033/tcp": "File Transfers"
 options:
-  data_path: "/config/teamspeak3",
+  data_path: "/config/teamspeak3"
   time_zone: "Europe/Moscow"
   db:
     host: mariadb
