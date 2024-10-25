@@ -10,14 +10,9 @@ arch:
   - aarch64
 timeout: 30
 map:
-  - type: homeassistant_config
-    read_only: False
-    path: /custom/homeassistant_config
   - type: addon_config
     read_only: False
-    path: /custom/addon_config
-  - type: share
-    read_only: False
+    path: /config/teamspeak3/save
 ports:
   9987/udp: 9987
   10011/tcp: 10011
@@ -27,7 +22,6 @@ ports_description:
   "10011/tcp": "Server Query"
   "30033/tcp": "File Transfers"
 options:
-  data_path: "/config/teamspeak3"
   time_zone: "Europe/Moscow"
   db:
     host: core-mariadb
@@ -36,7 +30,6 @@ options:
     password: mariadb
     waituntilready: 30
 schema:
-  data_path: str
   time_zone: str
   db:
     host: str
