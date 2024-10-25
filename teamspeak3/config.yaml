@@ -26,4 +26,4 @@ options:
 schema:
   time_zone: str
 backup_exclude:
-  - "/data/save/logs"
+  - "/config/logs"
