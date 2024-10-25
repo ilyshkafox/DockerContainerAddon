@@ -12,7 +12,7 @@ timeout: 30
 map:
   - type: addon_config
     read_only: False
-    path: /config/teamspeak3/save
+    path: /teamspeak/save
 ports:
   9987/udp: 9987
   10011/tcp: 10011
