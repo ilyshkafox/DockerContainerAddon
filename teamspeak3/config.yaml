@@ -23,19 +23,7 @@ ports_description:
   "30033/tcp": "File Transfers"
 options:
   time_zone: "Europe/Moscow"
-  db:
-    host: core-mariadb
-    database: teamspeak3
-    user: mariadb
-    password: mariadb
-    waituntilready: 30
 schema:
   time_zone: str
-  db:
-    host: str
-    database: str
-    user: str
-    password: str
-    waituntilready: int
 backup_exclude:
-  - ".*/ts3server/logs/.*"
+  - "/data/save/logs"
