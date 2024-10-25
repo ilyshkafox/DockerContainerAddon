@@ -23,4 +23,7 @@ export TS3SERVER_DB_WAITUNTILREADY
 export TS3SERVER_LICENSE
 
 
+mkdir -P "/data/save"
+ln -fP "/data/save" "/teamspeak/save"
+
 /init
